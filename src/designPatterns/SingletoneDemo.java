@@ -16,7 +16,6 @@ public final class SingletoneDemo {
 			reentrantLock.lock();
 			if (singletoneDemoObj == null) {
 				singletoneDemoObj = new SingletoneDemo();
-
 			}
 			reentrantLock.unlock();
 		}
